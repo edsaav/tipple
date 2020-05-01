@@ -1,7 +1,18 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+// const data = require('./src/data/recipes.json')
+// const path = require(`path`)
 
-// You can delete this file if you're not using it
+// exports.createPages = async ({ actions }) => {
+//   const { createPage } = actions
+
+//   data.forEach(node  => {
+//     createPage({
+//       path: node.name.toLowerCase().replace(/ /g,"-"),
+//       component: path.resolve(`./src/templates/recipe.js`),
+//       context: {
+//         // Data passed to context is available
+//         // in page queries as GraphQL variables.
+//         test: 'Test Field',
+//       },
+//     })
+//   })
+// }

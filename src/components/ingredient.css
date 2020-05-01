@@ -1,0 +1,13 @@
+span.unit {
+  font-variant: small-caps;
+  font-size: .8rem;
+}
+
+span.amount {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-right: .25rem;
+}
+
+span.ingredient-name {
+  font-weight: 600;
+}

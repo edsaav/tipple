@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Manhattan",
+    "directions": "Stir all ingredients in a mixing glass with ice. Strain into a coupe, drop a cherry in if desired.",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "quantity": "2¼",
+        "unit": "oz"
+      },
+      {
+        "name": "Sweet Vermouth",
+        "quantity": "¾",
+        "unit": "oz"
+      },
+      {
+        "name": "Angostura Bitters",
+        "quantity": "2",
+        "unit": "dash"
+      }
+    ],
+    "garnish": "Maraschino Cherry",
+    "glass": "Coupe",
+    "tags": ["whiskey", "short", "classic"]
+  },
+  {
+    "name": "Tom Collins",
+    "directions": "Shake gin, simple syrup and lemon juice with ice. Strain into a Collins glass filled with ice and top with club soda.",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": "2",
+        "unit": "oz"
+      },
+      {
+        "name": "Simple Syrup",
+        "quantity": "¾",
+        "unit": "oz"
+      },
+      {
+        "name": "Lemon Juice",
+        "quantity": "¾",
+        "unit": "oz"
+      },
+      {
+        "name": "Club Soda"
+      }
+    ],
+    "garnish": "Lemon Wedge",
+    "glass": "Collins",
+    "tags": ["gin", "tall", "classic"]
+  },
+  {
+    "name": "Margarita",
+    "directions": "Shake ingredients with ice. Strain into rocks glass filled with ice and rimmed with salt. Garnish with a lime wedge.",
+    "ingredients": [
+      {
+        "name": "Repasado Tequila",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Cointreau",
+        "quantity": "¾",
+        "unit": "oz"
+      },
+      {
+        "name": "Lime Juice",
+        "quantity": "¾",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "Lime Wedge",
+    "glass": "Rocks",
+    "tags": ["tequila", "short", "classic"]
+  },
+  {
+    "name": "Negroni",
+    "directions": "Stir with ice in a mixing glass. Strain into a rocks glass with a single large ice cube. Garnish with an orange peel.",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Campari",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Sweet Vermouth",
+        "quantity": "1",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "Orange Peel",
+    "glass": "Rocks",
+    "tags": ["gin", "short", "classic"]
+  },
+  {
+    "name": "Sazarac",
+    "directions": "Stir whiskey, simple syrup and bitters with ice in a mixing glass. Strain into a rocks glass coated with absinthe. Garnish with a lemon peel.",
+    "ingredients": [
+      {
+        "name": "Rye Whiskey",
+        "quantity": "2",
+        "unit": "oz"
+      },
+      {
+        "name": "Simple Syrup",
+        "quantity": "¼",
+        "unit": "oz"
+      },
+      {
+        "name": "Peychaud's Bitters",
+        "quantity": "3",
+        "unit": "dash"
+      },
+      {
+        "name": "Angostura Bitters",
+        "quantity": "1",
+        "unit": "dash"
+      },
+      {
+        "name": "Absinthe"
+      }
+    ],
+    "garnish": "Lemon Peel",
+    "glass": "Rocks",
+    "tags": ["whiskey", "short", "classic"]
+  }
+]
