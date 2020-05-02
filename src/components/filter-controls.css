@@ -1,0 +1,30 @@
+.filter-controls {
+  background-color: #f2f2f2;
+  margin: 1rem;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+.filter-mode-switch {
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+}
+
+.filter-mode-switch .filter-switch-label {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4rem;
+  font-size: 1rem;
+  color: #737373;
+  font-weight: bold;
+}
+
+.filter-mode-switch .switch-label {
+  margin: 0 1rem;
+}

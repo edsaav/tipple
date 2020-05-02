@@ -1,6 +1,5 @@
 ul.filters-list {
   display: flex;
-  padding: 1rem;
   flex-wrap: wrap;
   align-content: flex-start;
 }
