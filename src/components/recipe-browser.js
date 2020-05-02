@@ -2,15 +2,19 @@ import React from 'react';
 import RecipeList from "../components/recipe-list"
 import FiltersList from "../components/filters-list"
 import Switch from "../components/switch"
+import Search from "../components/search"
 import "./filter-controls.css"
+import { debounce } from "../utils/debounce"
 
 class RecipeBrowser extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       activeFilters: [],
-      inclusiveFilter: true 
+      inclusiveFilter: false ,
+      searchString:''
     };
+    // this.updateSearch = this.updateSearch.bind(this);
   }
 
   addFilter = (filter) => {
@@ -32,9 +36,23 @@ class RecipeBrowser extends React.Component {
     }));
   }
 
+  updateSearch = debounce((newSearchString) => {
+    this.setState({ searchString: newSearchString });
+    console.log('updating')
+  }, 250)
+
+  debouncedUpdateSearch = (e) => {
+    this.updateSearch(e.target.value);
+  }
+
   render() {
     return (
       <>
+      <Search
+        searchId='main-search'
+        handleInputChange={this.debouncedUpdateSearch}
+        placeholderText='Search for a cocktail'
+      />
       <div className='filter-controls'>
         <div className='filter-mode-switch'>
           <span className='filter-switch-label filter-mode-and'>AND</span>
@@ -53,6 +71,7 @@ class RecipeBrowser extends React.Component {
       <RecipeList
         activeFilters={this.state.activeFilters}
         inclusiveFilter={this.state.inclusiveFilter}
+        searchString={this.state.searchString}
       />
       </>
     );

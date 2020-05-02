@@ -1,6 +1,5 @@
 import React from 'react'
 import Recipe from "../components/recipe"
-import "./recipe-list.css"
 
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -28,10 +27,14 @@ const RecipeList = (props) => {
   )
 
   let filteredData = data.allRecipesJson.nodes.filter((node) => {
+    let textMatch = true
+    if (props.searchString.length > 0) {
+      textMatch = node.name.toLowerCase().includes(props.searchString.toLowerCase())
+    }
     if (props.inclusiveFilter) {
-      return props.activeFilters.filter(value => node.tags.includes(value)).length !== 0
+      return props.activeFilters.filter(value => node.tags.includes(value)).length !== 0 && textMatch
     } else {
-      return props.activeFilters.filter(value => node.tags.includes(value)).length === props.activeFilters.length
+      return props.activeFilters.filter(value => node.tags.includes(value)).length === props.activeFilters.length && textMatch
     }
   })
 
