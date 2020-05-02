@@ -28,7 +28,11 @@ const RecipeList = (props) => {
   )
 
   let filteredData = data.allRecipesJson.nodes.filter((node) => {
-    return props.activeFilters.filter(value => node.tags.includes(value)).length !== 0
+    if (props.inclusiveFilter) {
+      return props.activeFilters.filter(value => node.tags.includes(value)).length !== 0
+    } else {
+      return props.activeFilters.filter(value => node.tags.includes(value)).length === props.activeFilters.length
+    }
   })
 
   return (
