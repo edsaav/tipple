@@ -12,9 +12,9 @@ class RecipeBrowser extends React.Component {
     this.state = {
       activeFilters: [],
       inclusiveFilter: false ,
-      searchString:''
+      searchString:'',
+      filtersHidden: true
     };
-    // this.updateSearch = this.updateSearch.bind(this);
   }
 
   addFilter = (filter) => {
@@ -36,6 +36,14 @@ class RecipeBrowser extends React.Component {
     }));
   }
 
+  toggleFiltersHidden = () => {
+    console.log('Toggling')
+    this.setState(prevState => ({
+      filtersHidden: !prevState.filtersHidden
+    }));
+    console.log(this.state.filtersHidden)
+  }
+
   updateSearch = debounce((newSearchString) => {
     this.setState({ searchString: newSearchString });
     console.log('updating')
@@ -48,12 +56,18 @@ class RecipeBrowser extends React.Component {
   render() {
     return (
       <>
-      <Search
-        searchId='main-search'
-        handleInputChange={this.debouncedUpdateSearch}
-        placeholderText='Search for a cocktail'
-      />
-      <div className='filter-controls'>
+      <div className='search-controls'>
+        <Search
+          searchId='main-search'
+          handleInputChange={this.debouncedUpdateSearch}
+          placeholderText='Search for a cocktail'
+        />
+        <button
+          className='show-filters'
+          onClick={this.toggleFiltersHidden}
+        />
+      </div>
+      <div className={`filter-controls ${this.state.filtersHidden && 'closed'}`}>
         <div className='filter-mode-switch'>
           <span className='filter-switch-label filter-mode-and'>AND</span>
           <Switch
@@ -72,6 +86,7 @@ class RecipeBrowser extends React.Component {
         activeFilters={this.state.activeFilters}
         inclusiveFilter={this.state.inclusiveFilter}
         searchString={this.state.searchString}
+        filtersHidden={this.state.filtersHidden}
       />
       </>
     );
