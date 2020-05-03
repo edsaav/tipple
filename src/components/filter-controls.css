@@ -3,6 +3,13 @@
   border-radius: .5rem;
   padding: 1rem;
   margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.filter-controls.closed {
+  height: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .filter-mode-switch {
@@ -27,4 +34,26 @@
 
 .filter-mode-switch .switch-label {
   margin: 0 1rem;
+}
+
+.show-filters {
+  border: none;
+  background-image: url('/icons/filter-icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.search-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.search-controls .search-input {
+  width: calc(100% - 4.5rem);
+  margin-right: .5rem;
 }

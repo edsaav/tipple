@@ -31,10 +31,13 @@ const RecipeList = (props) => {
     if (props.searchString.length > 0) {
       textMatch = node.name.toLowerCase().includes(props.searchString.toLowerCase())
     }
+    if (props.filtersHidden) {
+      return textMatch
+    }
     if (props.inclusiveFilter) {
-      return props.activeFilters.filter(value => node.tags.includes(value)).length !== 0 && textMatch
+      return props.activeFilters.filter(value => node.tags.includes(value)).length !== 0 || (props.searchString.length > 0 && textMatch)
     } else {
-      return props.activeFilters.filter(value => node.tags.includes(value)).length === props.activeFilters.length && textMatch
+      return props.activeFilters.filter(value => node.tags.includes(value)).length === props.activeFilters.length && textMatch && props.activeFilters.length > 0
     }
   })
 
