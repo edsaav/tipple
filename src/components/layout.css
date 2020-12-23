@@ -26,8 +26,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   font-size: 16px;
-  background-color: #eaeaea;
-  padding: 1rem;
+	background-color: #f0f0f0;
+  padding: 1rem 8rem;
 }
 ol, ul {
 	list-style: none;
@@ -46,4 +46,17 @@ table {
 }
 a {
   text-decoration: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 1rem 10%;
+  }
 }

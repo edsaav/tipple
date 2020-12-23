@@ -63,7 +63,7 @@ class RecipeBrowser extends React.Component {
           placeholderText='Search for a cocktail'
         />
         <button
-          className='show-filters'
+          className={`show-filters ${this.state.filtersHidden && 'inactive'}`}
           onClick={this.toggleFiltersHidden}
         />
       </div>
