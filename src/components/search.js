@@ -9,8 +9,10 @@ class Search extends React.Component {
         id={this.props.searchId}
         name={this.props.searchId}
         className='search-input'
-        onInput={this.props.handleInputChange}
+        onChange={this.props.handleInputChange}
+        onClick={this.props.handleSearchClick}
         placeholder={this.props.placeholderText}
+        value={this.props.searchString}
       />
     )
   }

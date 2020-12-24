@@ -9,17 +9,44 @@
   color: #737373;
   font-weight: bold;
   box-shadow: 1px 1px 4px #afafaf;
-  transition: color 100ms linear;
+  transition: color 100ms linear,
+              width 200ms ease,
+              background-size 100ms ease;
+  background-image: url('/icons/search-icon.png');
+  background-repeat: no-repeat;
+  background-size: 0;
+  background-position: center;
 }
 
 .search-input:focus {
   transition:
     border-color 200ms linear,
-    color 200ms linear;
+    color 200ms linear,
+    width 200ms ease,
+    background-size 100ms ease;
   border-color: #404040;
   color: #a8a8a8;
 }
 
+.search-controls.inactive .search-input {
+  width: 1rem;
+  transition: width 200ms ease,
+              background-size 100ms ease;
+  background-size: 1.8rem;
+  cursor: pointer;
+}
+
+.search-controls.inactive .search-input:hover {
+  box-shadow: 2px 2px 4px #afafaf;
+}
+
+.search-controls.inactive .search-input::placeholder {
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
 .search-input::placeholder {
+  opacity: 1;
+  transition: opacity 100ms linear;
   font-weight: normal;
 }
