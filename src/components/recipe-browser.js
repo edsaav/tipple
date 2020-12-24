@@ -13,6 +13,7 @@ class RecipeBrowser extends React.Component {
       activeFilters: [],
       inclusiveFilter: false ,
       searchString:'',
+      searchInput:'',
       filtersHidden: true
     };
   }
@@ -37,30 +38,37 @@ class RecipeBrowser extends React.Component {
   }
 
   toggleFiltersHidden = () => {
-    console.log('Toggling')
     this.setState(prevState => ({
       filtersHidden: !prevState.filtersHidden
     }));
-    console.log(this.state.filtersHidden)
+    this.setState({ searchInput: '' });
+    this.setState({ searchString: '' });
   }
 
   updateSearch = debounce((newSearchString) => {
     this.setState({ searchString: newSearchString });
-    console.log('updating')
   }, 250)
 
+  handleSearchClick = () => {
+    this.setState({ filtersHidden: true });
+  }
+
   debouncedUpdateSearch = (e) => {
-    this.updateSearch(e.target.value);
+    this.setState({ searchInput: e.target.value });
+    this.updateSearch(e.target.value.trim());
   }
 
   render() {
     return (
       <>
-      <div className='search-controls'>
+      <div className={`search-controls ${!this.state.filtersHidden && 'inactive'}`}>
         <Search
           searchId='main-search'
           handleInputChange={this.debouncedUpdateSearch}
+          toggleSearch={this.toggleFiltersHidden}
           placeholderText='Search for a cocktail'
+          handleSearchClick={this.handleSearchClick}
+          searchString={this.state.searchInput}
         />
         <button
           className={`show-filters ${this.state.filtersHidden && 'inactive'}`}
