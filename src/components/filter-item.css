@@ -25,3 +25,11 @@ button.filter-item.active {
   transition: background-color 150ms ease-in-out,
               color 150ms ease-in-out;
 }
+
+button.filter-item:hover {
+  background-color: #cecece;
+}
+
+button.filter-item.active:hover {
+  background-color: #737373;
+}
