@@ -61,34 +61,38 @@ class RecipeBrowser extends React.Component {
   render() {
     return (
       <>
-      <div className={`search-controls ${!this.state.filtersHidden && 'inactive'}`}>
-        <Search
-          searchId='main-search'
-          handleInputChange={this.debouncedUpdateSearch}
-          toggleSearch={this.toggleFiltersHidden}
-          placeholderText='Search for a cocktail'
-          handleSearchClick={this.handleSearchClick}
-          searchString={this.state.searchInput}
-        />
-        <button
-          className={`show-filters ${this.state.filtersHidden && 'inactive'}`}
-          onClick={this.toggleFiltersHidden}
-        />
-      </div>
-      <div className={`filter-controls ${this.state.filtersHidden && 'closed'}`}>
-        <div className='filter-mode-switch'>
-          <span className='filter-switch-label filter-mode-and'>AND</span>
-          <Switch
-            switchId='filter-mode-switch'
-            switchOn={this.state.inclusiveFilter}
-            onSwitchToggle={this.toggleFilter}
+      <div className={`controls-wrapper ${!this.state.filtersHidden && 'filters-active'}`}>
+        <div className={`search-controls ${!this.state.filtersHidden && 'inactive'}`}>
+          <Search
+            searchId='main-search'
+            handleInputChange={this.debouncedUpdateSearch}
+            toggleSearch={this.toggleFiltersHidden}
+            placeholderText='Search for a cocktail'
+            handleSearchClick={this.handleSearchClick}
+            searchString={this.state.searchInput}
           />
-          <span className='filter-switch-label filter-mode-or'>OR</span>
+          <div className='filter-mode-switch'>
+            <span className={`filter-switch-label filter-mode-and ${!this.state.inclusiveFilter && 'active'}`}>AND</span>
+            <Switch
+              switchId='filter-mode-switch'
+              switchOn={this.state.inclusiveFilter}
+              onSwitchToggle={this.toggleFilter}
+            />
+            <span className={`filter-switch-label filter-mode-or ${this.state.inclusiveFilter && 'active'}`}>OR</span>
+          </div>
+          <button
+            className={`show-filters ${this.state.filtersHidden && 'inactive'}`}
+            onClick={this.toggleFiltersHidden}
+          >
+            Browse
+          </button>
         </div>
-        <FiltersList
-          addFilter={this.addFilter}
-          removeFilter={this.removeFilter}
-        />
+        <div className={`filter-controls ${this.state.filtersHidden && 'closed'}`}>
+          <FiltersList
+            addFilter={this.addFilter}
+            removeFilter={this.removeFilter}
+          />
+        </div>
       </div>
       <RecipeList
         activeFilters={this.state.activeFilters}
