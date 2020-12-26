@@ -60,3 +60,18 @@ button:focus {
     padding: 1rem 10%;
   }
 }
+
+body p::before {
+  background-image: url('/icons/cocktail-illustration.png');
+  opacity: .05;
+  content: "";
+  background-size: 30%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  top: 12rem;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -100;
+}

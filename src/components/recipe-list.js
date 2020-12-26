@@ -27,7 +27,7 @@ const RecipeList = (props) => {
   )
 
   let filteredData = data.allRecipesJson.nodes.filter((node) => {
-    let textMatch = true
+    let textMatch = !props.filtersHidden
     if (props.searchString.length > 0) {
       textMatch = node.name.toLowerCase().includes(props.searchString.toLowerCase())
     }
@@ -41,14 +41,26 @@ const RecipeList = (props) => {
     }
   })
 
+  let activeSearch = props.activeFilters.length != 0 || props.searchString.length != 0;
+
   return (
-    <ul className='recipe-list'>
-      {filteredData.map(node => {
-        return (
-          <Recipe key={node.id} recipe={node} />
-        )
-      })}
-    </ul>
+    <div className={`results ${filteredData.length == 0 && 'empty'} ${activeSearch && 'active-search'}`}>
+      <div className='help-text'>
+        <p className='default'>
+          Use the search bar to find a particular cocktail recipe. Have some gin and don't know what to make? Click browse to explore recipes by ingredient and style.
+        </p>
+        <p className='no-results'>
+          Hm. No results for that search. Try something else!
+        </p>
+      </div>
+      <ul className='recipe-list'>
+        {filteredData.map(node => {
+          return (
+            <Recipe key={node.id} recipe={node} />
+          )
+        })}
+      </ul>
+    </div>
   )
 }
 

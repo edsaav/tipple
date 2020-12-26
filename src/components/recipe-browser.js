@@ -4,6 +4,7 @@ import FiltersList from "../components/filters-list"
 import Switch from "../components/switch"
 import Search from "../components/search"
 import "./filter-controls.css"
+import "./help-text.css"
 import { debounce } from "../utils/debounce"
 
 class RecipeBrowser extends React.Component {
