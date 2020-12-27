@@ -41,7 +41,7 @@ const RecipeList = (props) => {
     }
   })
 
-  let activeSearch = props.activeFilters.length != 0 || props.searchString.length != 0;
+  let activeSearch = (props.activeFilters.length != 0 && !props.filtersHidden) || props.searchString.length != 0;
 
   return (
     <div className={`results ${filteredData.length == 0 && 'empty'} ${activeSearch && 'active-search'}`}>

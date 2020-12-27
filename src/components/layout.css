@@ -55,7 +55,7 @@ button:focus {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   body {
     padding: 1rem 10%;
   }
@@ -65,7 +65,7 @@ body p::before {
   background-image: url('/icons/cocktail-illustration.png');
   opacity: .05;
   content: "";
-  background-size: 30%;
+  background-size: 40vh;
   position: absolute;
   background-repeat: no-repeat;
   background-position-x: center;

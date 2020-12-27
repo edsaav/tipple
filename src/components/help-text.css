@@ -31,3 +31,9 @@
 .empty.active-search .help-text .no-results {
   display: block;
 }
+
+@media screen and (max-width: 650px) {
+  .help-text p {
+    width: inherit;
+  }
+}

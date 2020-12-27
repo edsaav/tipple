@@ -80,6 +80,16 @@
   color: #737373;
 }
 
+@media screen and (max-width: 650px) {
+  .show-filters {
+    display: none;
+  }
+
+  .show-filters.inactive {
+    display: block;
+  }
+}
+
 .search-controls {
   display: flex;
   align-items: center;
