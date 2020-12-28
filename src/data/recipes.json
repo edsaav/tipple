@@ -129,5 +129,638 @@
     "garnish": "Lemon Peel",
     "glass": "Rocks",
     "tags": ["whiskey", "short", "classic"]
+  },
+  {
+    "name": "Chicago Cocktail",
+    "directions": "Rim chilled rocks glass with lemon and sugar. Stir remaining ingredients with ice and strain into glass.",
+    "ingredients": [
+      {
+        "name": "Brandy",
+        "quantity": "2",
+        "unit": "oz"
+      },
+      {
+        "name": "Triple Sec",
+        "quantity": "¼",
+        "unit": "oz"
+      },
+      {
+        "name": "Angostura Bitters",
+        "quantity": "1",
+        "unit": "dash"
+      }
+    ],
+    "garnish": "Lemon Wedge, Superfine Sugar",
+    "glass": "Rocks",
+    "tags": ["brandy", "short"]
+  },
+  {
+    "name": "Rum Swizzle",
+    "directions": "Combine first 4 ingredients in an ice filled Collins glass, stir until glass is frosted. Top with soda water.",
+    "ingredients": [
+      {
+        "name": "Light or Dark Rum",
+        "quantity": "2",
+        "unit": "oz"
+      },
+      {
+        "name": "Simple Syrup",
+        "quantity": "½",
+        "unit": "oz"
+      },
+      {
+        "name": "Lime Juice",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Angostura Bitters",
+        "quantity": "2",
+        "unit": "dash"
+      },
+      {
+        "name": "Soda Water"
+      }
+    ],
+    "garnish": "Swizzle Stick",
+    "glass": "Collins",
+    "tags": ["rum", "tall"]
+  },
+  {
+    "name": "Headless Horseman",
+    "directions": "Pour vodka and bitters into a Collins glass and add ice. Fill with ginger ale and garnish with an orange wheel.",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": "2",
+        "unit": "oz"
+      },
+      {
+        "name": "Angostura Bitters",
+        "quantity": "3",
+        "unit": "dash"
+      },
+      {
+        "name": "Ginger Ale"
+      }
+    ],
+    "garnish": "Orange Wheel",
+    "glass": "Collins",
+    "tags": ["vodka", "tall"]
+  },
+  {
+    "name": "Screwdriver",
+    "directions": "Pour vodka and juice into a Collins glass with ice. Stir well.",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Orange Juice",
+        "quantity": "5",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "",
+    "glass": "Collins",
+    "tags": ["vodka", "tall", "classic", "sweet"]
+  },
+  {
+    "name": "Soviet",
+    "directions": "Shake ingredients with ice and strain into a rocks glass. Garnish with a lemon twist.",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Amontillado Sherry",
+        "quantity": "½",
+        "unit": "oz"
+      },
+      {
+        "name": "Dry Vermouth",
+        "quantity": "½",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "Lemon Twist",
+    "glass": "Rocks",
+    "tags": ["vodka", "short", "sherry"]
+  },
+  {
+    "name": "Boomerang",
+    "directions": "Stir ingredients with ice and strain into a chilled cocktail glass. Garnish with a lemon twist.",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Dry Vermouth",
+        "quantity": "½",
+        "unit": "oz"
+      },
+      {
+        "name": "Benadictine",
+        "quantity": "¼",
+        "unit": "oz"
+      },
+      {
+        "name": "Angostura Bitters",
+        "quantity": "1",
+        "unit": "dash"
+      }
+    ],
+    "garnish": "Lemon Twist",
+    "glass": "Cocktail",
+    "tags": ["gin", "short"]
+  },
+  {
+    "name": "Van Fleet",
+    "directions": "Shake ingredients with ice and strain into a rocks glass filled with ice.",
+    "ingredients": [
+      {
+        "name": "Light Rum",
+        "quantity": "3",
+        "unit": "oz"
+      },
+      {
+        "name": "Maple Syrup",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Lemon Juice",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Angostura Bitters",
+        "quantity": "1",
+        "unit": "dash"
+      }
+    ],
+    "garnish": "",
+    "glass": "Rocks",
+    "tags": ["rum", "short", "strong"]
+  },
+  {
+    "name": "Old Fashioned",
+    "directions": "Stir bourbon, simple syrup, and bitters in a mixing glass with ice. Strain into a rocks glass with one large ice cube. Garnish with an orange peel.",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "quantity": "3",
+        "unit": "oz"
+      },
+      {
+        "name": "Simple Syrup",
+        "quantity": "¼",
+        "unit": "oz"
+      },
+      {
+        "name": "Angostura Bitters",
+        "quantity": "1",
+        "unit": "dash"
+      },
+      {
+        "name": "Orange Bitters",
+        "quantity": "1",
+        "unit": "dash"
+      }
+    ],
+    "garnish": "Orange Peel",
+    "glass": "Rocks",
+    "tags": ["whiskey", "short", "classic"]
+  },
+  {
+    "name": "Aperol Spritz",
+    "directions": "Build into a rocks glass filled with ice. Top with a splash of soda water and garnish with half an orange slice.",
+    "ingredients": [
+      {
+        "name": "Prosecco",
+        "quantity": "2",
+        "unit": "oz"
+      },
+      {
+        "name": "Aperol",
+        "quantity": "1⅓",
+        "unit": "oz"
+      },
+      {
+        "name": "Soda Water"
+      }
+    ],
+    "garnish": "Orange Slice",
+    "glass": "Rocks",
+    "tags": ["refreshing"]
+  },
+  {
+    "name": "White Russian",
+    "directions": "Pour vodka and Kahlua into a rocks glass filled with ice. Add milk and slowly stir in.",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Kahlua",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Whole Milk",
+        "quantity": "1½",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "",
+    "glass": "Rocks",
+    "tags": ["sweet", "vodka", "dessert"]
+  },
+  {
+    "name": "Boulevardier",
+    "directions": "Stir ingredients in a mixing glass with ice. Strain into a rocks glass with a single large ice cube and garnish with a lemon peel.",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Sweet Vermouth",
+        "quantity": "¾",
+        "unit": "oz"
+      },
+      {
+        "name": "Campari",
+        "quantity": "¾",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "Lemon Peel",
+    "glass": "Rocks",
+    "tags": ["bitter", "whiskey", "short"]
+  },
+  {
+    "name": "Mint Julep",
+    "directions": "Gently muddle 8 mint leaves and simple syrup in the bottom of a julep cup. Add crushed ice and bourbon. Stir until the glass frosts and top with more ice. Garnish with a mint sprig and serve with a straw.",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "quantity": "2",
+        "unit": "oz"
+      },
+      {
+        "name": "Simple Syrup",
+        "quantity": "½",
+        "unit": "oz"
+      },
+      {
+        "name": "Mint Leaves"
+      }
+    ],
+    "garnish": "Mint Sprig",
+    "glass": "Julep",
+    "tags": ["sweet", "whiskey", "refreshing", "classic"]
+  },
+  {
+    "name": "Daiquiri",
+    "directions": "Shake ingredients with ice and strain into a chilled cocktail glass.",
+    "ingredients": [
+      {
+        "name": "White Rum",
+        "quantity": "2",
+        "unit": "oz"
+      },
+      {
+        "name": "Lime Juice",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Simple Syrup",
+        "quantity": "½",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "",
+    "glass": "Cocktail",
+    "tags": ["rum", "refreshing", "classic"]
+  },
+  {
+    "name": "Aviation",
+    "directions": "Shake ingredients with ice and strain into a chilled cocktail glass. Garnish with a maraschino cherry.",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": "2",
+        "unit": "oz"
+      },
+      {
+        "name": "Maraschino Liqueur",
+        "quantity": "½",
+        "unit": "oz"
+      },
+      {
+        "name": "Créme de Violette",
+        "quantity": "¼",
+        "unit": "oz"
+      },
+      {
+        "name": "Lemon Juice",
+        "quantity": "¾",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "",
+    "glass": "Cocktail",
+    "tags": ["gin", "refreshing", "classic", "short"]
+  },
+  {
+    "name": "Vesper",
+    "directions": "Shake ingredients with ice and strain into a chilled cocktail glass. Garnish with a lemon twist.",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Vodka",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Lillet Blanc",
+        "quantity": "½",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "Lemon Twist",
+    "glass": "Cocktail",
+    "tags": ["gin", "vodka", "strong", "short"]
+  },
+  {
+    "name": "Martinez",
+    "directions": "Stir ingredients in a mixing glass with ice and strain into a chilled coupe glass. Garnish with an orange twist.",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Sweet Vermouth",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Marschino Liqueur",
+        "quantity": "¼",
+        "unit": "oz"
+      },
+      {
+        "name": "Angostura Bitters",
+        "quantity": "2",
+        "unit": "dash"
+      }
+    ],
+    "garnish": "Orange Twist",
+    "glass": "Coupe",
+    "tags": ["gin", "classic", "short"]
+  },
+  {
+    "name": "Dry Martini",
+    "directions": "Add ingredients to a mixing glass with ice and stir well. Strain into a chilled cocktail glass and garnish with a lemon twist.",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": "2½",
+        "unit": "oz"
+      },
+      {
+        "name": "Dry Vermouth",
+        "quantity": "½",
+        "unit": "oz"
+      },
+      {
+        "name": "Orange Bitters",
+        "quantity": "1",
+        "unit": "dash"
+      }
+    ],
+    "garnish": "Lemon Twist",
+    "glass": "Cocktail",
+    "tags": ["gin", "classic", "short", "strong"]
+  },
+  {
+    "name": "Sidecar",
+    "directions": "Shake ingredients with ice and strain into a chilled cocktail glass.",
+    "ingredients": [
+      {
+        "name": "Cognac",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Triple Sec",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Lemon Juice",
+        "quantity": "½",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "Lemon Twist",
+    "glass": "Cocktail",
+    "tags": ["brandy", "classic", "short"]
+  },
+  {
+    "name": "Bijou",
+    "directions": "Shake ingredients with ice and strain into a chilled cocktail glass. Squeeze a lemon peel over the drink and use it as a garnish.",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Sweet Vermouth",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Green Chartreuse",
+        "quantity": "¾",
+        "unit": "oz"
+      },
+      {
+        "name": "Orange Bitters",
+        "quantity": "2",
+        "unit": "dash"
+      }
+    ],
+    "garnish": "Lemon Peel",
+    "glass": "Cocktail",
+    "tags": ["gin", "herbal", "short"]
+  },
+  {
+    "name": "The Last Word",
+    "directions": "Shake ingredients with ice and strain into a chilled cocktail glass.",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": "¾",
+        "unit": "oz"
+      },
+      {
+        "name": "Maraschino Liqueur",
+        "quantity": "¾",
+        "unit": "oz"
+      },
+      {
+        "name": "Green Chartreuse",
+        "quantity": "¾",
+        "unit": "oz"
+      },
+      {
+        "name": "Lime Juice",
+        "quantity": "¾",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "Lemon Peel",
+    "glass": "Cocktail",
+    "tags": ["gin", "herbal", "short"]
+  },
+  {
+    "name": "Gin Fizz",
+    "directions": "Shake gin, lemon juice, and simple syrup with ice and pour unstrained into a tumbler. Top with soda water and garnish with a lemon slice.",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Lemon Juice",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Simple Syrup",
+        "quantity": "⅓",
+        "unit": "oz"
+      },
+      {
+        "name": "Soda Water",
+        "quantity": "2⅔",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "Lemon Slice",
+    "glass": "Tumbler",
+    "tags": ["gin", "refreshing", "tall"]
+  },
+  {
+    "name": "Americano",
+    "directions": "Stir ingredients in a rocks glass with ice. Top with a splash of soda water and garnish with an orange slice.",
+    "ingredients": [
+      {
+        "name": "Campari",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Sweet Vermouth",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Soda Water"
+      }
+    ],
+    "garnish": "Orange Slice",
+    "glass": "Rocks",
+    "tags": ["refreshing", "tall", "bitter"]
+  },
+  {
+    "name": "Greyhound",
+    "directions": "Stir ingredients in a collins glass with ice and garnish with a lime wedge.",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Grapefruit Juice"
+      }
+    ],
+    "garnish": "Lime Wedge",
+    "glass": "Collins",
+    "tags": ["refreshing", "tall", "vodka"]
+  },
+  {
+    "name": "Cosmopolitan",
+    "directions": "Shake ingredients with ice and strain into a chilled cocktail glass. Garnish with a lime wedge.",
+    "ingredients": [
+      {
+        "name": "Citrus Vodka",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Cointreau",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Lime Juice",
+        "quantity": "½",
+        "unit": "oz"
+      },
+      {
+        "name": "Cranberry Juice",
+        "quantity": "1",
+        "unit": "dash"
+      }
+    ],
+    "garnish": "Lime Wedge",
+    "glass": "Cocktail",
+    "tags": ["sweet", "vodka"]
+  },
+  {
+    "name": "Moscow Mule",
+    "directions": "Combine vodgak and ginger beer in a mule cup with crushed ice and garnish with a lime wedge.",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": "1½",
+        "unit": "oz"
+      },
+      {
+        "name": "Ginger Beer",
+        "quantity": "4",
+        "unit": "oz"
+      },
+      {
+        "name": "Lime Juice",
+        "quantity": "⅛",
+        "unit": "oz"
+      }
+    ],
+    "garnish": "Lime Wedge",
+    "glass": "Mule",
+    "tags": ["sweet", "vodka", "refreshing"]
   }
 ]
