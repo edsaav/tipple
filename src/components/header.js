@@ -5,13 +5,12 @@ import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <header className='site-header'>
-    <div>
-      <h1 style={{ margin: 0 }}>
-        <Link to="/">
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+    <h1 style={{ margin: 0 }}>
+      <Link to="/">
+        {siteTitle}
+      </Link>
+    </h1>
+    <Link to="/about" className="about">about</Link>
   </header>
 )
 

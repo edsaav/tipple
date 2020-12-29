@@ -1,0 +1,24 @@
+.about-content {
+  padding: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  color: #636363;
+}
+
+.about-content h1 {
+  color: #364958;
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 2rem;
+}
+
+.about-content i {
+  font-style: italic;
+}
+
+@media screen and (max-width: 650px) {
+  .about-content {
+    padding: 3rem 0;
+  }
+}
