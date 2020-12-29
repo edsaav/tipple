@@ -6,7 +6,7 @@ import "./../components/about.css"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About Cocktail Cards" />
+    <SEO title="About" />
       <div className="about-content">
       <h1>About</h1>
       <p>Cocktail Cards is a simple app designed to make finding cocktail recipes quicker and easier than ever. It was created by <a href="https://github.com/edsaav">Edward Saavedra</a> using <a href="https://www.gatsbyjs.com">Gatsby</a>. Recipes are sourced from assorted books and websites and represent only a fraction of the myriad libations available to the adventurous tippler. More creative concoctions to be added in the future.</p>
