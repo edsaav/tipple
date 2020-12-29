@@ -41,10 +41,10 @@ const RecipeList = (props) => {
     }
   })
 
-  let activeSearch = (props.activeFilters.length != 0 && !props.filtersHidden) || props.searchString.length != 0;
+  let activeSearch = (props.activeFilters.length !== 0 && !props.filtersHidden) || props.searchString.length !== 0;
 
   return (
-    <div className={`results ${filteredData.length == 0 && 'empty'} ${activeSearch && 'active-search'}`}>
+    <div className={`results ${filteredData.length === 0 && 'empty'} ${activeSearch && 'active-search'}`}>
       <div className='help-text'>
         <p className='default'>
           Use the search bar to find a particular cocktail recipe. Have some gin and don't know what to make? Click browse to explore recipes by ingredient and style.

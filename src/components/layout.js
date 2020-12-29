@@ -24,12 +24,15 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="content-wrapper">
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
       </div>
-    </>
+      <div className="footer">
+        <p>© 2020 Edward Saavedra</p>
+      </div>
+      </div>
   )
 }
 

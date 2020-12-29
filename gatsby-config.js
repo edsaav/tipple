@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Tipple`,
-    description: `Cocktail recipes, nothing more, nothing less.`,
+    title: `Cocktail Cards`,
+    description: `Quickly search and discover the best classic and contemporary cocktail recipes`,
     author: `@edsaav`,
   },
   plugins: [

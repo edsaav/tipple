@@ -1,5 +1,8 @@
 header.site-header {
-  margin-bottom: 1rem;
+  /* margin: 2rem 0 1rem 0; */
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 header.site-header h1 a {
@@ -7,4 +10,18 @@ header.site-header h1 a {
   font-size: 1.5rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-transform: lowercase;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  background-image: url('./../images/cocktail-logo.png');
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+header.site-header a.about {
+  color: #364958;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 1rem;
 }

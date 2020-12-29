@@ -12,7 +12,7 @@
   transition: color 100ms linear,
               width 200ms ease,
               background-size 100ms ease;
-  background-image: url('/icons/search-icon.png');
+  background-image: url('./../images/search-icon.png');
   background-repeat: no-repeat;
   background-size: 0;
   background-position: center;
