@@ -19,6 +19,6 @@
 
 @media screen and (max-width: 650px) {
   .about-content {
-    padding: 3rem 0;
+    padding: 3rem 1rem;
   }
 }

@@ -5,17 +5,18 @@
 
 .controls-wrapper.filters-active {
   background-color: white;
-  border-radius: .5rem;
   transition: background-color 150ms ease;
 }
 
 .controls-wrapper {
-  background-color: none;
+  background-color: transparent;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  overflow: hidden;
 }
 
 .filter-controls {
-  padding: 1rem;
-  margin-bottom: 1rem;
   overflow: hidden;
 }
 
@@ -88,17 +89,4 @@
   .show-filters.inactive {
     display: block;
   }
-}
-
-.search-controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.search-controls .search-input {
-  width: calc(100% - 4.5rem);
-  margin-right: .5rem;
 }

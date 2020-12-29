@@ -1,5 +1,14 @@
+.search-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 1rem 0;
+}
+
 .search-input {
   max-width: 30rem;
+  width: calc(100% - 4.5rem);
+  margin-right: .5rem;
   border-radius: 1rem;
   padding: 1rem 1.5rem;
   border: 2px solid white;

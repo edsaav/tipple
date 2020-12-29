@@ -57,7 +57,7 @@ button:focus {
 
 @media screen and (max-width: 650px) {
   body {
-    padding: 0 10%;
+    padding: 0 1rem;
   }
 }
 
@@ -98,4 +98,9 @@ body::before {
 
 main {
 	padding-bottom: 4rem;
+}
+
+p a {
+	color: #364958;
+	text-decoration: underline;
 }

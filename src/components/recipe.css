@@ -19,7 +19,7 @@ li.recipe-card {
 @media screen and (max-width: 480px) {
   li.recipe-card {
     min-width: 80%;
-    margin-right: 0;
+    margin: 0 0 1rem 0;
   }
 }
 
